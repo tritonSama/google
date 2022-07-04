@@ -1,10 +1,60 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Google</title>
-        <link rel="stylesheet" type+"text/css" href="stylesheet.css">
+        <link rel="stylesheet" href="google.css">
+        <style>
+            
+            div {text-align: center;}
+            nav div{
+                padding: 10px;
+            }
+            .nav-link:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        </style>
     </head>
-    <body>
+    <body
+        style="
+            background-color: #202124;
+            height: 10vh;
+            max-height: 100vh;
+            color: white;
+            font-family: ariel, sans-serif;
+        "
+    >    
+
+        <nav 
+            style="
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-content: center;
+                justify-content: flex-end;
+                align-items: center;
+            "
+        >
+            <div class="nav-link">Gmail</div> 
+            <div class="nav-link">Images</div> 
+            <div style="width: 24px; height:24px"> 
+                <svg 
+                    style="width: 24px; height: 24px"
+                    class="gb_Te"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                >
+                    
+                    <path 
+                        fill="#ffffff"
+                        d="M6,8c1,1,0,2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0"
+                    ></path>
+                </svg>
+            </div>
+        </nav>
         <div class="header">
             <ul>
                 <li><a href="image">Image</a></li>
@@ -14,14 +64,15 @@
 
         <button type="button">SIGN IN</button>
         
-        <center>
-            <img src="google.com/images/srpr/logo4w.png">
+        <div id="logo">
+            <img src="https://cdn.freebiesupply.com/images/large/2x/google-logo-black-transparent.png">
             <form>
                 <input type="text" name="search" value="" class="search_box"><br>
                 <input type="submit" valus="Google Search" class="search_button1">
                 <input type="submit" value="Im Feeling Lucky" class="search-button2">
             </form>
-        </center>
+        </div>
+        
         <div class="footer">
             <ul>
                 <li><a href="nowhere">About Google</a> </li>
